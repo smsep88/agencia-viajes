@@ -15,6 +15,7 @@
         <a href="formulario_vuelo.html">Nuevo vuelo</a>
         <a href="formulario_hotel.html">Nuevo hotel</a>
         <a href="formulario_reserva.php">Nueva reserva</a>
+        <a href="buscar_vuelos.php">Buscar vuelos</a>
         <a href="listar_vuelos.php">Ver vuelos</a>
         <a href="listar_hoteles.php">Ver hoteles</a>
         <a href="listar_reservas.php">Ver reservas</a>
