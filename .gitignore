@@ -1,0 +1,7 @@
+# Credenciales locales (no se suben al repositorio)
+config/conexion.php
+
+# Editor y sistema operativo
+.vscode/
+.DS_Store
+Thumbs.db

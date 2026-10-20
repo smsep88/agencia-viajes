@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar vuelo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/validaciones.js"></script>
+</head>
+<body>
+<header>
+    <h1>Agencia de Viajes</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="formulario_vuelo.html">Nuevo vuelo</a>
+        <a href="formulario_hotel.html">Nuevo hotel</a>
+        <a href="formulario_reserva.php">Nueva reserva</a>
+        <a href="listar_vuelos.php">Ver vuelos</a>
+        <a href="listar_hoteles.php">Ver hoteles</a>
+        <a href="listar_reservas.php">Ver reservas</a>
+        <a href="consulta_avanzada.php">Consulta avanzada</a>
+    </nav>
+</header>
+<main>
+    <h2>Registrar vuelo</h2>
+    <form action="insertar_vuelo.php" method="post" onsubmit="return validarVuelo(this)" novalidate>
+        <div id="errores"></div>
+
+        <label for="origen">Origen</label>
+        <input type="text" id="origen" name="origen" maxlength="60">
+
+        <label for="destino">Destino</label>
+        <input type="text" id="destino" name="destino" maxlength="60">
+
+        <label for="fecha">Fecha del vuelo</label>
+        <input type="date" id="fecha" name="fecha">
+
+        <label for="plazas_disponibles">Plazas disponibles</label>
+        <input type="number" id="plazas_disponibles" name="plazas_disponibles" min="1">
+
+        <label for="precio">Precio</label>
+        <input type="number" id="precio" name="precio" min="1" step="0.01">
+
+        <button type="submit">Guardar vuelo</button>
+    </form>
+</main>
+</body>
+</html>

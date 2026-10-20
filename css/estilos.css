@@ -1,0 +1,177 @@
+/* Estilos generales de la aplicacion */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f2;
+    color: #222;
+}
+
+header {
+    background-color: #38761d;
+    color: #fff;
+    padding: 12px 24px;
+}
+
+header h1 {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 14px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    padding: 20px;
+}
+
+/* Formularios */
+form {
+    background-color: #fff;
+    border: 1px solid #cfd8c8;
+    border-radius: 6px;
+    padding: 20px;
+    max-width: 480px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Oculta las flechas de los campos numericos */
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    margin-top: 18px;
+    padding: 10px 22px;
+    background-color: #38761d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2b5a16;
+}
+
+/* Mensajes */
+.mensaje-ok {
+    background-color: #e2f2da;
+    border: 1px solid #6aa84f;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.mensaje-error {
+    background-color: #fde8e8;
+    border: 1px solid #cc4125;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+#errores {
+    display: none;
+    margin-bottom: 12px;
+    background-color: #fde8e8;
+    border: 1px solid #cc4125;
+    border-radius: 4px;
+    padding: 4px 12px;
+    font-size: 14px;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    margin-top: 12px;
+}
+
+th,
+td {
+    border: 1px solid #cfd8c8;
+    padding: 8px 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #d9ead3;
+}
+
+tr:nth-child(even) td {
+    background-color: #f7faf5;
+}
+
+code {
+    background-color: #eee;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+pre {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+/* Menu de inicio */
+.menu a {
+    display: block;
+    background-color: #fff;
+    border: 1px solid #cfd8c8;
+    border-left: 5px solid #38761d;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    color: #222;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #e9f3e4;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar hotel</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/validaciones.js"></script>
+</head>
+<body>
+<header>
+    <h1>Agencia de Viajes</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="formulario_vuelo.html">Nuevo vuelo</a>
+        <a href="formulario_hotel.html">Nuevo hotel</a>
+        <a href="formulario_reserva.php">Nueva reserva</a>
+        <a href="listar_vuelos.php">Ver vuelos</a>
+        <a href="listar_hoteles.php">Ver hoteles</a>
+        <a href="listar_reservas.php">Ver reservas</a>
+        <a href="consulta_avanzada.php">Consulta avanzada</a>
+    </nav>
+</header>
+<main>
+    <h2>Registrar hotel</h2>
+    <form action="insertar_hotel.php" method="post" onsubmit="return validarHotel(this)" novalidate>
+        <div id="errores"></div>
+
+        <label for="nombre">Nombre del hotel</label>
+        <input type="text" id="nombre" name="nombre" maxlength="100">
+
+        <label for="ubicacion">Ubicación</label>
+        <input type="text" id="ubicacion" name="ubicacion" maxlength="100">
+
+        <label for="habitaciones_disponibles">Habitaciones disponibles</label>
+        <input type="number" id="habitaciones_disponibles" name="habitaciones_disponibles" min="1">
+
+        <label for="tarifa_noche">Tarifa por noche</label>
+        <input type="number" id="tarifa_noche" name="tarifa_noche" min="1" step="0.01">
+
+        <button type="submit">Guardar hotel</button>
+    </form>
+</main>
+</body>
+</html>
